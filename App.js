@@ -53,7 +53,7 @@ const App = () => {
   const onBackgroundFetchEvent = async taskId => {
     console.log('sync-data-background');
     const body = {
-      name: 'sync-data-background-release',
+      name: 'sync-data-background-release-new',
       date: new Date(),
     };
     const response = await axios
@@ -69,7 +69,7 @@ const App = () => {
 
     if (taskId === 'react-native-background-fetch') {
       try {
-        await scheduleTask('sync-data-headless');
+        // await scheduleTask('sync-data-headless');
       } catch (e) {
         console.warn('[BackgroundFetch] scheduleTask falied', e);
       }

@@ -17,7 +17,7 @@ const headlessTask = async event => {
   }
   console.log('sync-data-headless start: ', event.taskId);
   const body = {
-    name: 'sync-data-headless-release',
+    name: 'sync-data-headless-release-new',
     date: new Date(),
   };
   const response = await axios
